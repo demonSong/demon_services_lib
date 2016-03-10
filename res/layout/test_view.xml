@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:demon="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    
+    <!--设置 wrap_content 将变得没有效果  
+     ! layout width 只是用来控制 界面的大小
+     ! 如果绘画 实际的大小超过控件的大小，那么图片将只会显示部分
+     ! 因此完全可以 在自定义view里直接根据 图片的大小设置
+    -->
+    <com.demon.services.customviews.PopupText
+        android:id ="@+id/poptext"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        demon:pptext="景点：上大南区"
+        />
+</LinearLayout>

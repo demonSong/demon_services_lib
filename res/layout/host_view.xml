@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:demon="http://schemas.android.com/apk/res-auto"
+    android:layout_width="100dp"
+    android:layout_height="80dp" >
+
+    
+    <!-- relative layout 并不能让 背景图片居中表示嘛？ -->
+    
+    <RelativeLayout
+        android:id="@+id/popupView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:background="@drawable/chatto_bg_normal" >
+
+        <!--为什么 自定义组件 不受 父组件的控制呢  -->
+        <!--不能使用 wrap_content 由图片大小自由决定  -->
+        <!--  -->
+        <com.demon.services.customviews.PopupView
+            android:layout_width="100dp"
+            android:layout_height="80dp"
+            android:layout_centerInParent="true"
+            demon:imageContent="@drawable/nanqu" />
+    </RelativeLayout>
+
+</RelativeLayout>

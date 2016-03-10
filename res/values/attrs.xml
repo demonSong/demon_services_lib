@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="PopupView">
+        <attr name="imageContent" format="reference"/>
+    </declare-styleable>
+
+    <declare-styleable name="PopupText">
+        <attr name="pptext" format="string"/>
+    </declare-styleable>
+    
+    <declare-styleable name="FunctionButton">
+        <attr name="fb_title" format="string"/>
+        <attr name="fb_icon" format="reference"/>
+        <attr name="fb_rect" format="dimension" />
+    </declare-styleable>
+    
+</resources>
